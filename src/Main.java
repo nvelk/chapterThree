@@ -10,11 +10,5 @@ public class Main
 
         System.out.println("Your balance is: " + evinAcc.getBalance());
         System.out.println("Your balance is: " + cillAcc.getBalance());
-
-        evinAcc.deposit(799);
-        cillAcc.withdraw(1500);
-
-        System.out.println("Your balance is: " + evinAcc.getBalance());
-        System.out.println("Your balance is: " + cillAcc.getBalance());
     }
 }
