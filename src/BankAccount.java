@@ -4,33 +4,37 @@
  */
 public class BankAccount
 {
-    // private instance variables
-    private double balance;
+    //  instance variables
+    public double balance;
 
     // Constructors
     public BankAccount()
     {
-        balance = 0;
+        this(0);
     }
 
     public BankAccount(double initialBalance)
     {
-        balance = initialBalance;
+        this.balance = initialBalance;
     }
 
     // Methods
     /**
-     Withdraws money from the bank account.
-     @param amount the amount to withdraw
+     Deposits money from the bank account.
+     @param amount the amount to deposit
      */
     public void deposit(double amount)
     {
-        balance = balance + amount;
+        this.balance = this.balance + amount;
     }
 
+    /**
+     Withdraws money from the bank account.
+     @param amount the amount to withdraw
+     */
     public void withdraw(double amount)
     {
-        balance = balance - amount;
+        this.balance = this.balance - amount;
     }
 
     /**
@@ -39,6 +43,6 @@ public class BankAccount
      */
     public double getBalance()
     {
-        return balance;
+        return this.balance;
     }
 }
